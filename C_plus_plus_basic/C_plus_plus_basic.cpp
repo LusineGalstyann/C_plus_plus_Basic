@@ -192,3 +192,46 @@ int main()
 
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+//"even" prime numbers:
+
+/*
+#include <iostream>
+using namespace std;
+
+bool is_prime(int num) {
+    int i,r = sqrt(num);
+    for ( i = 2; i <= r; i ++)
+    {
+        if (num % i == 0)return false;
+    }
+    if (i > r)return true;
+}
+
+
+int main()
+{
+    int num;
+    cout << "enter the number (>5):  ";
+    cin >> num;
+
+    for (int i = 5; i <= num;i+=2) {
+        if (is_prime(i) and is_prime(i-2)){
+            cout << i-2 <<" "<<i<<endl;
+        }
+    }
+}
+
+
+
+*/
