@@ -119,8 +119,11 @@ int main()
 
 
 
-//LCM
 
+
+
+//LCM
+/*
 
 #include <iostream>
 using namespace std;
@@ -148,4 +151,44 @@ int main()
 }
 
 
+*/
+
+
+
+
+
+
+
+// Perfect numbers until k
+
+/*
+#include <iostream>
+using namespace std;
+
+bool is_perfect(int num) {
+    int sum = 1;
+    for (int i = 2; i <= num / 2; i++) {
+        if (sum > num) break;
+        else {
+            if (num % i == 0) {
+                sum += i;
+            }
+        }
+    }
+    if (sum == num) return true;
+    else return false;
+}
+
+
+int main()
+{
+
+    int k;
+    cout << "enter the number: ";
+    cin >> k;
+    for (int i = 2; i <= k; i++) {
+        if (is_perfect(i))cout << i << " ";
+    }
+
+}
 */
