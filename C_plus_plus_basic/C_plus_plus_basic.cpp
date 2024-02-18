@@ -26,7 +26,8 @@ int main()
 
 
 // Euclides gcd 2 types
-/*#include <iostream>
+/*
+#include <iostream>
 using namespace std;
 
 int gcd_mod(int a, int b) {//mec a poqr b
@@ -59,8 +60,8 @@ int gcd_sub(int a, int b) {
     }
     return a;
 }
-*/
-/*
+
+
 int main()
 {
     cout << "Finaly: " << gcd_mod(225, 157);
@@ -69,9 +70,51 @@ int main()
     cout << "Finaly: " << gcd_sub(24, 12);
 }
 
+*/
 
 
 
+
+
+
+
+
+
+
+
+// count of 4k+1 and 4k-1 tpyes numbers
+/*
+#include <iostream>
+using namespace std;
+
+
+bool is_prime(int num) {
+    int i, a = 1, r;
+    r = sqrt(num);
+    for (i = 2; i <= r; i++) {
+        if (num % i == 0) {
+            a = 0;
+            break;
+        }
+    }if (a == 1)return true;
+    else return false;
+}
+
+
+int main()
+{
+    int k;
+    cout << "Enter K: ";
+    cin >> k;
+    int count_a = 0, count_b = 0;
+    for (int i = 1; i <= k; i++) {
+        if (is_prime(i * 4 + 1)) count_a++;
+    }cout << count_a << endl;
+    for (int i = 1; i <= k; i++) {
+        if (is_prime(i * 4 - 1)) count_b++;
+    }cout << count_b << endl;
+}
+*/
 
 
 
