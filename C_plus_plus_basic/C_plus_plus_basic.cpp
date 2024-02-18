@@ -59,8 +59,8 @@ int gcd_sub(int a, int b) {
     }
     return a;
 }
-
-
+*/
+/*
 int main()
 {
     cout << "Finaly: " << gcd_mod(225, 157);
@@ -68,7 +68,41 @@ int main()
     cout << "Finaly: " << gcd_sub(225, 157);
     cout << "Finaly: " << gcd_sub(24, 12);
 }
+
+
+
+
+
+
+
+
+//LCM
+
+
+#include <iostream>
+using namespace std;
+
+int gcd_mod(int a, int b) {//mec a poqr b
+    int c;
+    c = a % b;
+    cout << "\ngcd for: " << a << " " << b << endl;
+    while (c > 0) {
+        a = b;
+        b = c;
+        c = a % b;
+        cout << a << "\t" << b << endl;
+    } return b;
+}
+
+int main()
+{
+    int a, b, c;
+    cout << "Enter 2 numbers: ";
+    cin >> a >> b;
+    cout << a << b;
+    c = gcd_mod(a, b);
+    cout << "LCM is: " << a * b / c;
+}
+
+
 */
-
-
-
